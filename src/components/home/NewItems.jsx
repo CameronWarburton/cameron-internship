@@ -127,15 +127,7 @@ const NewItems = () => {
             {loading
               ? new Array(4).fill(0).map((_, index) => (
                   <div className="px-1" key={index}>
-                    <div
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "space-between",
-                        width: "100%",
-                      }}
-                    >
-                      <div className="nft_coll_pp">
+                      <div className="author_list_pp">
                         <div
                           className="skeleton-box"
                           style={{
@@ -152,9 +144,9 @@ const NewItems = () => {
                           width: "80px",
                           height: "25px",
                           margin: "10px 0",
+                          right: "-200px",
                         }}
                       ></div>
-                    </div>
                     <div className="nft_wrap">
                       <div
                         className="skeleton-box"
@@ -165,7 +157,7 @@ const NewItems = () => {
                         }}
                       ></div>
                     </div>
-                    <div className="nft_coll_info">
+                    <div className="nft__item_info">
                       <div
                         className="skeleton-box"
                         style={{
