@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import AuthorImage from "../../images/author_thumbnail.jpg";
 import axios from "axios";
 
 const TopSellers = () => {
@@ -58,21 +57,21 @@ const TopSellers = () => {
                     </div>
                   </li>
                 ))
-              :items.map((items, index) => (
+              :items.map((item, index) => (
                 <li key={index}>
                   <div className="author_list_pp">
-                    <Link to={`/${items.authorId}`}>
+                    <Link to={`/author/${item.authorId}`}>
                       <img
                         className="lazy pp-author"
-                        src={`${items.authorImage}`}
+                        src={`${item.authorImage}`}
                         alt=""
                       />
                       <i className="fa fa-check"></i>
                     </Link>
                   </div>
                   <div className="author_list_info">
-                    <Link to={`/${items.authorId}`}>{`${items.authorName}`}</Link>
-                    <span>{`${items.price}`} ETH</span>
+                    <Link to={`/author/${item.authorId}`}>{`${item.authorName}`}</Link>
+                    <span>{`${item.price}`} ETH</span>
                   </div>
                 </li>
               ))}
