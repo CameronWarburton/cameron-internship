@@ -29,13 +29,12 @@ const Author = () => {
   useEffect(() => {
     if (authorId) {
       getData();
-      setTimeout(() => {}, 3000);
     }
-  }, [authorId]);
 
   setTimeout(() => {
     setLoading(false);
   }, 2000);
+}, [authorId]);
 
   const handleFollow = () => {
     if (isFollowing) {
