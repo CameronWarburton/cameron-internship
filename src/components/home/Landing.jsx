@@ -7,7 +7,7 @@ import "aos/dist/aos.css";
 
 AOS.init();
 
-// Any comment
+// FROM MAIN!!! DO NOT REMOVE
 
 const Landing = () => {
   return (
