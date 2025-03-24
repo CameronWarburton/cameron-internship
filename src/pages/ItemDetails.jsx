@@ -22,10 +22,10 @@ const ItemDetails = () => {
     if (nftId) {
       getData();
     }
-
+    
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 500);
   }, [nftId]);
 
   return (
