@@ -7,6 +7,8 @@ import "aos/dist/aos.css";
 
 AOS.init();
 
+// Any comment
+
 const Landing = () => {
   return (
     <section
