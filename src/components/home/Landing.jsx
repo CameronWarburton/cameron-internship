@@ -7,6 +7,8 @@ import "aos/dist/aos.css";
 
 AOS.init();
 
+// FROM MAIN!!! DO NOT REMOVE
+
 const Landing = () => {
   return (
     <section
