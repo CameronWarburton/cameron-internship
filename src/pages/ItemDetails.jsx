@@ -25,7 +25,7 @@ const ItemDetails = () => {
 
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 500);
   }, [nftId]);
 
   return (

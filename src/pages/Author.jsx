@@ -35,7 +35,7 @@ const Author = () => {
 
   setTimeout(() => {
     setLoading(false);
-  }, 2000);
+  }, 500);
 }, [authorId]);
 
   const handleFollow = () => {

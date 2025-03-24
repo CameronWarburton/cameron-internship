@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import NFTItem from "../NFTItem";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
 
 const ExploreItems = () => {
   const [items, setItems] = useState([]);
@@ -23,7 +27,7 @@ const ExploreItems = () => {
 
   setTimeout(() => {
     setLoading(false);
-  }, 2000);
+  }, 400);
 
   const loadMore = () => {
     setVisibleCount((prevCount) => prevCount + 4);
@@ -109,7 +113,7 @@ const ExploreItems = () => {
       )}
       {visibleCount < items.length && (
         <div className="col-md-12 text-center">
-          <button onClick={loadMore} className="btn-main lead">
+          <button onClick={loadMore} className="btn-main lead" data-aos="fade-up" data-aos-duration="1000">
             Load more
           </button>
         </div>

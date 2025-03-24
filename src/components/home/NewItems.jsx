@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
 import Slider from "react-slick";
-import CountdownTimer from "../CountdownTimer";
-import NFTItem from "../NFTItem";
+import NFTItem from "../NFTItem";import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
 
 const NewItems = () => {
   const [items, setItems] = useState([]);
@@ -75,7 +76,7 @@ const NewItems = () => {
   return (
     <section id="section-items" className="no-bottom">
       <div className="container">
-        <div className="row">
+        <div className="row" data-aos="fade-in" data-aos-duration="1000">
           <div className="col-lg-12">
             <div className="text-center">
               <h2>New Items</h2>
